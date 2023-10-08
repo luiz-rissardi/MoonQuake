@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Projeto abelha </title>
+    <style>
+        body {
+            margin: 0;
+        }
+    </style>
+  <script type="module" crossorigin src="/assets/index-95304785.js"></script>
+  <link rel="stylesheet" href="/assets/index-4aca4929.css">
+</head>
+
+<body>
+
+    <div class="QuakeDescription p-2" id="QuakeDescription">
+        <h2 class="w-100 text-center"> Moon Quake Description</h2>
+        <hr>
+        <h4> Date </h4>
+        <div class="ps-lg-5 mx-1">
+            <div class="d-flex">
+                <p> Year Of Quake: </p>
+                <p id="year"> 2007 </p>
+            </div>
+            <div class="d-flex">
+                <p> Day Of Quake: </p>
+                <p id="day"> 210 </p>
+            </div>
+        </div>
+        <hr>
+
+        <h4> Date Time </h4>
+        <div class="ps-lg-5 mx-1">
+            <div class="d-flex">
+                <p> Hour Detection: </p>
+                <p id="hour"> 12 </p>
+            </div>
+
+            <div class="d-flex">
+                <p> Minute Detection: </p>
+                <p id="minute"> 2 </p>
+            </div>
+            <div class="d-flex">
+                <p> Seconds Detection: </p>
+                <p id="second"> 12 </p>
+            </div>
+        </div>
+        <hr>
+
+        <h4> Location </h4>
+        <div class="ps-5 mx-1">
+            <div class="d-flex">
+                <p> Latitude: </p>
+                <p id="latitude"> -54 </p>
+            </div>
+            <div class="d-flex">
+                <p> Longitude: </p>
+                <p id="longitude"> 23.98 </p>
+            </div>
+            <div class="d-flex">
+                <p> Magnitude: </p>
+                <p id="magnitude"> 3.98 </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu d-flex flex-wrap">
+        <button class="btn btn-white color-white d-flex d-lg-none" type="button" id="buttonHamburguer">
+            <i class="fi fi-rr-arrow-small-down"></i>
+        </button>
+
+        <div id="menuContent" class="h-100 w-100">
+            <div class="d-flex my-3 w-100" style="height: 6vh;">
+                <div class="w-75 d-flex border rounded border-white">
+                    <p class="my-auto mx-2"> Apollo Modules </p>
+                </div>
+                <div class="w-25 d-flex">
+                    <input class="form-check-input m-auto" checked type="checkbox" id="apolloModule">
+                </div>
+            </div>
+
+            <div class="d-flex my-3 w-100" style="height: 6vh;">
+                <div class="w-75 d-flex border rounded border-white">
+                    <p class="my-auto mx-2"> Mares Moon </p>
+                </div>
+                <div class="w-25 d-flex">
+                    <input class="form-check-input m-auto" checked type="checkbox" id="moonMares">
+                </div>
+            </div>
+
+            <div class="d-flex my-3 w-100" style="height: 6vh;">
+                <div class="w-75 d-flex border rounded border-white">
+                    <p class="my-auto mx-2"> All MoonQuakes </p>
+                </div>
+                <div class="w-25 d-flex">
+                    <input class="form-check-input m-auto" type="checkbox" id="moonQuakes">
+                </div>
+            </div>
+
+            <div class="d-block my-3 w-100 border rounded border-white">
+                <div class="w-100 d-flex p-1">
+                    <div class="w-75 d-flex">
+                        <label class="my-auto mx-2"> Normal Moon </label>
+                    </div>
+                    <div class="w-25 d-flex">
+                        <input type="radio" class="form-check-input m-auto" name="moonType" value="normal">
+                    </div>
+                </div>
+                <div class="w-100 d-flex p-1">
+                    <div class="w-75 d-flex">
+                        <label class="my-auto mx-2"> Textured Moon </label>
+                    </div>
+                    <div class="w-25 d-flex">
+                        <input type="radio" class="form-check-input m-auto" name="moonType" value="textured">
+                    </div>
+                </div>
+                <div class="w-100 d-flex p-1">
+                    <div class="w-75 d-flex">
+                        <label class="my-auto mx-2"> Topographic Moon </label>
+                    </div>
+                    <div class="w-25 d-flex">
+                        <input type="radio" class="form-check-input m-auto" name="moonType" value="topographic">
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex my-3 mt-auto w-100 p-0">
+                <select id="selectYear">
+                    <option>Year</option>
+                    <option value="1971">1971</option>
+                    <option value="1972">1972</option>
+                    <option value="1973">1973</option>
+                    <option value="1974">1974</option>
+                    <option value="1975">1975</option>
+                    <option value="1976">1976</option>
+                </select>
+
+                <select id="selectDay">
+                    <option> Day</option>
+                </select>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="legendTopographic" id="legendTopographic">
+        <p class="text-white">1000+</p>
+        <img src="/assets/legend-Topographic-6b0c70fb.png" alt="">
+        <p class="text-white mt-3">1000-</p>
+    </div>
+
+
+    
+    
+</body>
+
+</html>
