@@ -1,0 +1,94 @@
+*{
+    font-family: monospace;
+    font-size: 12px;
+}
+
+.menu{
+    position: absolute;
+    width: 20%;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+}
+
+.QuakeDescription{
+    display: none;
+    position: absolute;
+    left: 78%;
+    width: 20%;
+    height: auto;
+    margin: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+}
+
+#selectYear, #selectDay{
+    position: relative;
+    width: 40%;
+    padding: 10px;
+    background-color: black;
+    top: 90%;
+    color: white;
+    margin-left: 5%;
+}
+
+.legendTopographic{
+    display: none;
+    position: absolute;
+    left: 30px;
+    top: 60%;
+    width: 20px;
+    height: 30%;
+}
+
+.legendTopographic img{
+    position: relative;
+    width: 20px;
+    height: 90%;
+}
+
+#buttonHamburguer{
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+}
+
+#buttonHamburguer:hover{
+    border: 1px solid white;
+}
+
+@media screen and (max-width:1000px) {
+
+    hr,#menuContent{
+        display: none;
+    }
+
+    *{
+        font-size: 10px;
+    }
+
+    .menu{
+        width: 53%;
+    }
+
+    #buttonHamburguer{
+        display: flex;
+    }
+
+    .QuakeDescription{
+        flex-wrap: wrap;
+        left: 0%;
+        top: 75%;
+        width: 90%;
+        padding: 20px;
+    }
+
+    .QuakeDescription h4{
+        display: none;
+    }
+}
