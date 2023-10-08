@@ -20,15 +20,7 @@ async function Main() {
     moonTextureState.initMoonTexture({moon,sun,scene});
     scene.add(moon);
     scene.add(sun);
-
-    //pegar luz do sol
-    // const directionalLight = sun.children.find(child => child instanceof THREE.DirectionalLight);
-    // directionalLight.intensity = 0.5;
-
-
-
-
-
+    
     const animateFn = animate(render)(scene)(camera)(controlls)(moon);
     animateFn();
 }
