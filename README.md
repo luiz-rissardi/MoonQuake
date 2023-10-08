@@ -15,7 +15,7 @@ Foi utilizado vários materiais da NASA para a sua construção e aqui estão el
 
 Como Rodar o Projeto 
 
-- primeiro clone o projeto na sua maquina local
+- primeiro abra o visual studio code e clone o projeto na sua maquina local
 - depois certifique-se que voce tenha o node instalado na sua maquina (para rodar o node)  -> versão 20.5.0 e NPM versão 10.2.0
 - depois va e rode o "npm install" para instalar as dependencias
 - depois va e rode o "npm install --save-dev vite" para instalar o Vite
