@@ -4,7 +4,7 @@ export function initSun(scene) {
     const sunGeometry = new THREE.SphereGeometry(30, 32, 32);
     const sunMaterial = new THREE.MeshBasicMaterial({ color: "yellow" });
     const sun = new THREE.Mesh(sunGeometry, sunMaterial);
-    sun.position.set(100, 20, 1000);
+    sun.position.set(100, 20, 900);
 
     const directionalLight = new THREE.DirectionalLight(0xffffff, 3);
     directionalLight.position.set(100, 0, 0);
