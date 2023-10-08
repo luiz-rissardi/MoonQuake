@@ -1,4 +1,4 @@
-![image](https://github.com/luiz-rissardi/MoonQuake/assets/89221727/4f885a6e-714f-421d-b663-db594f4d40d8)# MoonQuake
+# MoonQuake
 a repository dedicated to NASA's Moonquake 2.0 challenge of 2023
 
 Esse porjeto tem como objetivo ajudar as pessoas a visualizarem em uma representação
