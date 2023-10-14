@@ -13,7 +13,7 @@ export function initApolloLunarModules(moonModel) {
         let models = [];
         apolloLocations.forEach(module => {
             const loader = new GLTFLoader();
-            loader.load("./models/apolloModule/apollo_11_lunar_module.glb", (glb) => {
+            loader.load("./assets/apolloModule/apollo_11_lunar_module.glb", (glb) => {
                 const sonda = glb.scene;
                 const position = CoordinatesToPosition(module.position.latitude, module.position.longitude)
                 sonda.scale.set(0.02, 0.02, 0.02);
